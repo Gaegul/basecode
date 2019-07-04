@@ -17,7 +17,7 @@ def index():
 
 
 @app.route('/post/<int:id>', methods=['GET'])
-def post(id):
+def write(id):
 	post = Post.query.get(id)
 
 	return jsonify({
@@ -26,4 +26,4 @@ def post(id):
 
 
 if __name__ == '__main__':
-	app.run(host='0.0.0.0', debug=True, port=8080)
+	app.run(port=8080)
