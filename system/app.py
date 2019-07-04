@@ -1,6 +1,6 @@
 from flask import Flask
 
-from code.api import api
+from system.api.test import api
 
 
 def create_app():
